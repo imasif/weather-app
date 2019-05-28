@@ -43,7 +43,7 @@ class App extends React.Component {
   }
 
   changeCity(city){
-    console.log(city);
+    // console.log(city);
     this.setState({selectedCity:city});
     this.getWeather(city);
   }
@@ -63,7 +63,7 @@ class App extends React.Component {
 
     let mainWeather = weather.main;
 
-    console.log(weather);
+    // console.log(weather);
 
     return (
       <Row>
