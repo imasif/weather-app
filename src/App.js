@@ -66,14 +66,8 @@ class App extends React.Component {
     console.log(weather);
 
     return (
-      <Row style={{
-        margin: 0,
-        position: 'absolute',
-        top: '50%',
-        width: '100%',
-        transform: 'translateY(-50%)'
-        }}>
-        <Col xs={{span:22,offset:1}} sm={{span:28,offset:3}} md={{span:14,offset:5}} lg={{span:6,offset:9}} style={{padding:'40px 0', background: '#fff'}}>
+      <Row>
+        <Col xs={{span:22,offset:1}} sm={{span:28,offset:3}} md={{span:14,offset:5}} lg={{span:6,offset:9}} style={{padding:'40px 0'}}>
           <Row>
             <h1 style={{textAlign:'center'}}>Todays weather</h1>
             <Col span={24} style={{textAlign:'center'}}>
