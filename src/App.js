@@ -9,7 +9,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       cities: ["Dhaka","Chittagong","Khulna","Sylhet","Rajshahi","Mymensingh","Barisal","Rangpur","Comilla","Narayanganj","Gazipur"],
-      selectedCity: 'Select city',
+      selectedCity: 'Select',
       weather: {},
       currentLatLng: []
     }
@@ -69,9 +69,9 @@ class App extends React.Component {
       <Row>
         <Col xs={{span:22,offset:1}} sm={{span:28,offset:3}} md={{span:14,offset:5}} lg={{span:6,offset:9}} style={{padding:'40px 0'}}>
           <Row>
-            <h1 style={{textAlign:'center'}}>Todays weather</h1>
+            <h1 style={{textAlign:'center'}}>Bangladesh weather</h1>
             <Col span={24} style={{textAlign:'center'}}>
-              <span style={{fontSize:24}}>Location : </span>
+              <span style={{fontSize:24}}>City : </span>
               <Dropdown overlay={cities} trigger={['click']}>
                 <a className="ant-dropdown-link" href="#" style={{fontSize:24}}>
                   {selectedCity} <Icon style={{fontSize:18}} type="down" />
